@@ -6,7 +6,7 @@ and the git tag dates. Do not hand-edit — run the script.
 
 Full downloads and installers: [Releases](https://github.com/oblivion-systems/lockin/releases).
 
-## 1.0.0 — unreleased
+## [1.0.0](https://github.com/oblivion-systems/lockin/releases/tag/v1.0.0) — 2026-08-24
 
 - Lockin 1.0. Nothing new tonight — this number is a promise: the quiz, the plan, the tracker, match nights and auto-tracking are done and stable, and your data stays yours
 - From here, updates only add — your plan, streak and history carry forward, always
