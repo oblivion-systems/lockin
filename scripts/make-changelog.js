@@ -15,7 +15,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
-const REPO = 'https://github.com/jacquesvn/lockin';
+const REPO = 'https://github.com/oblivion-systems/lockin';
 const args = process.argv.slice(2);
 const CHECK = args.indexOf('--check') >= 0;
 const OUT = path.join(ROOT, args.filter((a) => !a.startsWith('--'))[0] || 'CHANGELOG.md');

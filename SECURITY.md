@@ -3,7 +3,7 @@
 ## Reporting a vulnerability
 
 Use GitHub's **private vulnerability reporting** on this repository:
-[Report a vulnerability](https://github.com/jacquesvn/lockin/security/advisories/new).
+[Report a vulnerability](https://github.com/oblivion-systems/lockin/security/advisories/new).
 
 If that isn't available to you, open a normal issue saying only that you have a security
 report and how to reach you — **no details in the public issue** — and you'll get a private

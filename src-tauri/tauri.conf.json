@@ -23,7 +23,7 @@
   },
   "plugins": {
     "updater": {
-      "endpoints": ["https://github.com/jacquesvn/lockin/releases/latest/download/latest.json"],
+      "endpoints": ["https://github.com/oblivion-systems/lockin/releases/latest/download/latest.json"],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEM5NUUzNEQ2OEQ4QTdGQkYKUldTL2Y0cU4xalJleVdVVkFxSld1eVJGeGh4M3U2cVUxeEZGd05nL252cG5ET1NWenRQWkVHcSsK"
     }
   },

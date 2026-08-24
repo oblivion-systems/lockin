@@ -1,6 +1,6 @@
 # Contributing
 
-Bug reports and ideas are welcome — [open an issue](https://github.com/jacquesvn/lockin/issues/new/choose).
+Bug reports and ideas are welcome — [open an issue](https://github.com/oblivion-systems/lockin/issues/new/choose).
 Security reports go [privately](SECURITY.md), not into a public issue.
 
 For code, the [Develop](README.md#develop) section of the README is the real reference. Three

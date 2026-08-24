@@ -5,13 +5,13 @@
   "description": "A free, local-first CS2 coach — eight questions, a 12-week training plan, and the daily tracker to actually run it.",
   "license": "MIT",
   "author": "Jacques van Niekerk",
-  "homepage": "https://jacquesvn.github.io/lockin/",
+  "homepage": "https://oblivion-systems.github.io/lockin/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jacquesvn/lockin.git"
+    "url": "https://github.com/oblivion-systems/lockin.git"
   },
   "bugs": {
-    "url": "https://github.com/jacquesvn/lockin/issues"
+    "url": "https://github.com/oblivion-systems/lockin/issues"
   },
   "keywords": [
     "cs2",

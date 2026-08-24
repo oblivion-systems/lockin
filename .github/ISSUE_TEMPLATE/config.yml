@@ -4,8 +4,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: Security vulnerability
-    url: https://github.com/jacquesvn/lockin/security/advisories/new
+    url: https://github.com/oblivion-systems/lockin/security/advisories/new
     about: Report privately, not as a public issue. See SECURITY.md.
   - name: Try Lockin
-    url: https://jacquesvn.github.io/lockin/
+    url: https://oblivion-systems.github.io/lockin/
     about: The web build — no account, works offline.

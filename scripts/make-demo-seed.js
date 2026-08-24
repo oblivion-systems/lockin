@@ -144,6 +144,6 @@ console.log('\nwrote ' + OUT + '  (' + kb + ' KB)');
 console.log('week ' + wk + ', ' + streak + '-day streak, ' + Object.keys(state.sessions).length + ' sessions, leak = ' +
             (leak ? leak.label + ' at ' + leak.pct + '%' : '—'));
 console.log('\nImport it into a THROWAWAY profile, not your own install:');
-console.log('  1. open https://jacquesvn.github.io/lockin/ in a browser profile you do not use');
+console.log('  1. open https://oblivion-systems.github.io/lockin/ in a browser profile you do not use');
 console.log('  2. Setup -> Import, choose this file');
 console.log('  3. take the shots, then close the profile — nothing of yours was touched');

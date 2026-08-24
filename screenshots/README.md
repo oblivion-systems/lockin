@@ -51,7 +51,7 @@ at 43%.
 **Import it into a throwaway browser profile, never your own install** — import replaces
 state, and a mis-click costs you your real streak:
 
-1. open <https://jacquesvn.github.io/lockin/> in a browser profile you don't use
+1. open <https://oblivion-systems.github.io/lockin/> in a browser profile you don't use
 2. Setup → Import, choose `demo-seed.json`
 3. take the shots, then close the profile — nothing of yours was touched
 

@@ -365,7 +365,7 @@ ok('the protocol ends on the calm reset', (function () {
 // for months. These lock the invariant so it can never regress.
 var NAV = { serviceWorker: {} };
 ok('SW registers on a normal https web origin',
-  shouldRegisterSW(NAV, { protocol: 'https:', hostname: 'jacquesvn.github.io' }, false) === true);
+  shouldRegisterSW(NAV, { protocol: 'https:', hostname: 'oblivion-systems.github.io' }, false) === true);
 ok('SW never registers when the Tauri bridge is present',
   shouldRegisterSW(NAV, { protocol: 'http:', hostname: 'tauri.localhost' }, true) === false);
 ok('SW never registers on the Tauri origin EVEN IF __TAURI__ has not loaded yet (the race)',
@@ -379,7 +379,7 @@ ok('SW does not register where unsupported',
 ok('isTauriOrigin recognises the desktop origins',
   isTauriOrigin({ hostname: 'tauri.localhost', protocol: 'http:' }) &&
   isTauriOrigin({ hostname: 'x', protocol: 'tauri:' }) &&
-  !isTauriOrigin({ hostname: 'jacquesvn.github.io', protocol: 'https:' }));
+  !isTauriOrigin({ hostname: 'oblivion-systems.github.io', protocol: 'https:' }));
 
 // --- v0.9.1: movement focus + workshop-map drills ---
 ok('movement focus exists with drills', !!(FOCI.movement && FOCI.movement.name && FOCI.movement.drills.length >= 3));

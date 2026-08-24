@@ -1,6 +1,6 @@
 # Lockin — your pocket CS2 coach
 
-**[Open Lockin →](https://jacquesvn.github.io/lockin/)** · [What it is](https://jacquesvn.github.io/lockin/landing.html) · [Download for Windows](../../releases/latest)
+**[Open Lockin →](https://oblivion-systems.github.io/lockin/)** · [What it is](https://oblivion-systems.github.io/lockin/landing.html) · [Download for Windows](../../releases/latest)
 
 A free coach for Counter-Strike 2. Answer eight questions and Lockin builds you a
 personalised 12-week training plan plus the daily tracker to actually run it — then reads
@@ -59,7 +59,7 @@ see [On the coaching](#on-the-coaching).
 
 | | |
 |---|---|
-| **Web / PWA** | [jacquesvn.github.io/lockin](https://jacquesvn.github.io/lockin/) — works offline, "Install app" to keep it |
+| **Web / PWA** | [oblivion-systems.github.io/lockin](https://oblivion-systems.github.io/lockin/) — works offline, "Install app" to keep it |
 | **Single file** | Download `docs/index.html`, double-click. No server, no install, nothing else needed. |
 | **Desktop** | Grab the installer from the [latest release](../../releases/latest) — adds the tray, native reminders, CS2 auto-tracking, and self-updating |
 | **Self-host** | `docs/` is a static folder — serve it with anything (`npx serve docs`, nginx, any static host) |
