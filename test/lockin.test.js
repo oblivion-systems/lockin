@@ -4088,6 +4088,15 @@ ok('a spring-forward inside the window does not lose a day', (function () {
   })());
 })();
 
+// --- v1.0: the funding model is a link, not a paywall ---
+ok('the support link is rendered in Setup as a _blank anchor, so desktop routes it to the real browser', (function () {
+  // target="_blank" is load-bearing: the document-level interceptor only catches those, and
+  // without it a desktop click navigates the webview to ko-fi with no way back.
+  return /function supportSec\(\)/.test(script) &&
+         /supportSec\(\)/.test(script.slice(script.indexOf("function htmlSetup"))) &&
+         /<a class="datarow" href="https:\/\/ko-fi\.com\/jacquesvn" target="_blank" rel="noopener noreferrer">/.test(script);
+})());
+
 // --- v0.54: the CS2 config can go out of date, and nothing used to say so ---
 (function staleGsiConfig() {
   const rust = fs.readFileSync(path.join(__dirname, '..', 'src-tauri', 'src', 'lib.rs'), 'utf8');

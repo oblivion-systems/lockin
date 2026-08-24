@@ -1,6 +1,6 @@
 # Lockin — your pocket CS2 coach
 
-**[Open Lockin →](https://oblivion-systems.github.io/lockin/)** · [What it is](https://oblivion-systems.github.io/lockin/landing.html) · [Download for Windows](../../releases/latest)
+**[Open Lockin →](https://oblivion-systems.github.io/lockin/)** · [What it is](https://oblivion-systems.github.io/lockin/landing.html) · [Download for Windows](../../releases/latest) · [Support it ♥](https://ko-fi.com/jacquesvn)
 
 A free coach for Counter-Strike 2. Answer eight questions and Lockin builds you a
 personalised 12-week training plan plus the daily tracker to actually run it — then reads
@@ -68,6 +68,10 @@ The installer isn't code-signed, so Windows SmartScreen may warn on first run:
 **More info → Run anyway**. That's a one-time step — the desktop app updates itself, checking
 a few seconds after launch, every four hours while it runs, and whenever you bring the
 window back from the tray.
+
+**Free is the model, not a trial.** There is no paid tier, no ads, and by design nothing to
+sell — no account, no telemetry, your data never leaves your device. If Lockin earns it,
+[a coffee on Ko-fi](https://ko-fi.com/jacquesvn) is what keeps it going.
 
 ---
 

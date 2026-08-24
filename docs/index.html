@@ -2155,7 +2155,8 @@
     "0.54.0":["Lockin now notices when your CS2 config was written by an older version, and says so in Setup instead of quietly sending less than it could",
               "It asks CS2 for your loadout too, so a future card can tell you what you were holding when you died, not just what it cost"],
     "1.0.0":["Lockin 1.0. Nothing new tonight — this number is a promise: the quiz, the plan, the tracker, match nights and auto-tracking are done and stable, and your data stays yours",
-             "From here, updates only add — your plan, streak and history carry forward, always"]
+             "From here, updates only add — your plan, streak and history carry forward, always",
+             "New home: the web app now lives at oblivion-systems.github.io/lockin (the old address is gone — export/import moves your data). And if Lockin earned a coffee, there is now a Ko-fi link in Setup"]
   };
   function vcmp(a,b){
     var x=String(a).split("."),y=String(b).split(".");
@@ -5323,6 +5324,21 @@
       '<div style="display:flex;flex-direction:column;gap:8px;">'+action+'</div>'+
       '<p class="help">Found a bug, or the plan doesn’t fit? Tell me. Your version is filled in automatically — nothing else about you is sent.</p>';
   }
+  /* ---------- support ----------
+     The funding model, stated as plainly as the privacy card states its promise: the app is
+     free and stays free, there is nothing in it to monetise by design (no account, no
+     telemetry, nothing leaves the device), so donations are the whole model. One link, no
+     nag, no locked features behind it — a paywall would contradict the privacy card above it.
+     A plain _blank anchor: the document-level interceptor routes it to the real browser on
+     desktop, and the web build opens a normal new tab. */
+  function supportSec(){
+    var HEART='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M12 21C7 17 2 13.5 2 8.8 2 5.6 4.4 3 7.5 3c1.8 0 3.4.9 4.5 2.3C13.1 3.9 14.7 3 16.5 3 19.6 3 22 5.6 22 8.8c0 4.7-5 8.2-10 12.2z"/></svg>';
+    return '<div class="divi"><span class="ml" role="heading" aria-level="2">SUPPORT LOCKIN</span></div>'+
+      '<div style="display:flex;flex-direction:column;gap:8px;">'+
+      '<a class="datarow" href="https://ko-fi.com/jacquesvn" target="_blank" rel="noopener noreferrer">'+HEART+
+      '<span>Buy me a coffee<small>Ko-fi — opens in your browser</small></span></a></div>'+
+      '<p class="help">Lockin is free and stays free — no account, no ads, nothing sold, so donations are the only thing keeping it going. Only if it earned it.</p>';
+  }
 
   /* ---------- SETUP ---------- */
   function htmlSetup(st){
@@ -5400,7 +5416,7 @@
       '<button class="datarow" data-act="reset"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg><span>Erase all data<small>Delete everything and start over — can’t be undone</small></span></button>'+
       '<input type="file" id="impF" accept="application/json" style="display:none;"></div>'+
       (storageOk?'':'<div class="ml" style="color:var(--bad);margin-top:8px;">⚠ STORAGE BLOCKED — EXPORT TO KEEP YOUR DATA</div>');
-    return hd+prof+tagSec+cueSec+pauseSection(st)+app+remSec+gsiSec+updateSec()+privacy+honestExportCard(st)+data+feedbackSec()+'<div class="foot">LOCKIN · FREE FOREVER · NO ACCOUNT · v'+VERSION+'</div>';
+    return hd+prof+tagSec+cueSec+pauseSection(st)+app+remSec+gsiSec+updateSec()+privacy+honestExportCard(st)+data+feedbackSec()+supportSec()+'<div class="foot">LOCKIN · FREE FOREVER · NO ACCOUNT · v'+VERSION+'</div>';
   }
   // GEAR — your sens/DPI/eDPI, crosshair code and launch options. Its own tab so you can
   // pull it up mid-game to copy a crosshair or double-check your eDPI.
