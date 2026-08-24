@@ -5,7 +5,7 @@
 A free coach for Counter-Strike 2. Answer eight questions and Lockin builds you a
 personalised 12-week training plan plus the daily tracker to actually run it — then reads
 your own log back at week 4 and week 8 and offers to change the plan. Because a good plan
-and the discipline to follow it shouldn't cost $50 an hour.
+and the discipline to follow it shouldn't be a luxury.
 
 No account. No server. No telemetry. Your data lives on your device and nowhere else.
 
