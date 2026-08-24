@@ -23,7 +23,7 @@ screenshots live in `screenshots/` instead.
 npm run verify        # syntax gate + all three suites, against the real shipped file
 ```
 
-493 tests across `test/lockin.test.js`, `test/journey.test.js` and `test/a11y.test.js`. They
+550 tests (at v1.0) across `test/lockin.test.js`, `test/journey.test.js` and `test/a11y.test.js`. They
 run the actual `<script>` out of `docs/index.html`, so they test what ships rather than a
 copy of it.
 

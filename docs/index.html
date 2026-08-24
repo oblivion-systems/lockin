@@ -1192,7 +1192,7 @@
 (function(){
   "use strict";
   var KEY="lockin.v1";
-  var VERSION="0.54.0";
+  var VERSION="1.0.0";
   var storageOk=true, mem=null;
 
   /* ---------- svg bits ---------- */
@@ -2153,7 +2153,9 @@
               "It is the first figure on Progress that Lockin measured rather than asked you to type in"],
     "0.53.0":["Fixed: leave Lockin open and it never noticed a new version — closing to the tray is not quitting, and the check only ran at launch"],
     "0.54.0":["Lockin now notices when your CS2 config was written by an older version, and says so in Setup instead of quietly sending less than it could",
-              "It asks CS2 for your loadout too, so a future card can tell you what you were holding when you died, not just what it cost"]
+              "It asks CS2 for your loadout too, so a future card can tell you what you were holding when you died, not just what it cost"],
+    "1.0.0":["Lockin 1.0. Nothing new tonight — this number is a promise: the quiz, the plan, the tracker, match nights and auto-tracking are done and stable, and your data stays yours",
+             "From here, updates only add — your plan, streak and history carry forward, always"]
   };
   function vcmp(a,b){
     var x=String(a).split("."),y=String(b).split(".");

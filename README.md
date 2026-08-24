@@ -65,10 +65,9 @@ see [On the coaching](#on-the-coaching).
 | **Self-host** | `docs/` is a static folder — serve it with anything (`npx serve docs`, nginx, any static host) |
 
 The installer isn't code-signed, so Windows SmartScreen may warn on first run:
-**More info → Run anyway**. From v0.9.1 the desktop app updates itself, so that's a
-one-time step. It checks a few seconds after launch, every four hours while it runs, and
-whenever you bring the window back from the tray — closing to the tray does not quit it, so
-before v0.53.0 a machine that never rebooted never checked twice.
+**More info → Run anyway**. That's a one-time step — the desktop app updates itself, checking
+a few seconds after launch, every four hours while it runs, and whenever you bring the
+window back from the tray.
 
 ---
 
@@ -167,7 +166,7 @@ set it up.
 
 **Watches your rounds so you don't have to.** *(desktop)* With auto-tracking on, Lockin keeps
 one fact per round — did you die, how long after the round went live, what you bought, what
-you had left, kills, whether you won. Nobody sustains remembering twenty rounds after the
+you had left, kills and assists, whether you won. Nobody sustains remembering twenty rounds after the
 fact, and self-report is exactly the thing this app distrusts everywhere else.
 
 It does not show you those facts. A panel of numbers you cannot act on is decoration, and
@@ -301,13 +300,13 @@ npm run check    # syntax gate only
 npm test         # the three suites
 ```
 
-Three suites, **493 tests**, all run in CI on every push:
+Three suites — **550 tests at v1.0**, plus 21 on the Rust side — all run in CI on every push:
 
 | File | What it covers |
 |---|---|
-| `test/lockin.test.js` | 449 unit and content guards against the real `<script>` |
-| `test/journey.test.js` | 25 — the whole user journey, quiz to graduation, 92 simulated days |
-| `test/a11y.test.js` | 19 — WCAG 2.1 AA: computed contrast, focus, semantics, targets |
+| `test/lockin.test.js` | unit and content guards against the real `<script>` |
+| `test/journey.test.js` | the whole user journey, quiz to graduation, 92 simulated days — including booting the desktop build against a mocked Tauri |
+| `test/a11y.test.js` | WCAG 2.1 AA: computed contrast, focus, semantics, targets |
 | `test/harness.js` | shared: a small DOM plus a boot that runs the real shipped script |
 
 The tests extract the actual `<script>` from `docs/index.html` and run it in a sandboxed

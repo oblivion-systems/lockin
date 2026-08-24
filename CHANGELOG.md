@@ -6,6 +6,11 @@ and the git tag dates. Do not hand-edit — run the script.
 
 Full downloads and installers: [Releases](https://github.com/jacquesvn/lockin/releases).
 
+## 1.0.0 — unreleased
+
+- Lockin 1.0. Nothing new tonight — this number is a promise: the quiz, the plan, the tracker, match nights and auto-tracking are done and stable, and your data stays yours
+- From here, updates only add — your plan, streak and history carry forward, always
+
 ## [0.54.0](https://github.com/jacquesvn/lockin/releases/tag/v0.54.0) — 2026-08-13
 
 - Lockin now notices when your CS2 config was written by an older version, and says so in Setup instead of quietly sending less than it could
